@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script  src="https://code.jquery.com/jquery-3.3.1.js"  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="continer">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                    <h1>trivia Quiz</h1>
+                </div>
+        </div>
+    </div>
+    <div class="continer">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 text-center" >
+                        <form id="quiz" name="quiz">
+                            <h3>How long is an Olympic swimming pool?</h3>
+                            <input type="radio" name="question1" value="50 meters">50 meters
+                            <input type="radio" name="question1" value="25 meters">25 meters
+                            <input type="radio" name="question1" value="100 meters">100 meters
+                            <input type="radio" name="question1" value="75 meters">75 meters<br><br>
+
+                            <h3>In which country were the first Olympic Games held?</h3>
+                            <input type="radio" name="question2" value="France">France
+                            <input type="radio" name="question2" value="Germany">Germany
+                            <input type="radio" name="question2" value="Greece">Greece
+                            <input type="radio" name="question2" value="Japan">Japan<br><br>
+
+                            <h3>In Where were the Olympic Games held in 1996 ?</h3>
+                            <input type="radio" name="question3" value="Salt Lake City">Salt Lake City
+                            <input type="radio" name="question3" value="Atlanta">Atlanta
+                            <input type="radio" name="question3" value="Los Angeles">Los Angeles
+                            <input type="radio" name="question3" value="Squaw Valley">Squaw Valley<br><br>
+
+                            <h3>In which sport can you win the Davis Cup?</h3>
+                            <input type="radio" name="question4" value="Badminton">Badminton
+                            <input type="radio" name="question4" value="Football">Football
+                            <input type="radio" name="question4" value="Cricket">Cricket
+                            <input type="radio" name="question4" value="Tennis">Tennis<br><br>
+
+                            <h3>How many players has a hockey team got on the ice?</h3>
+                            <input type="radio" name="question5" value="Five players">Five players
+                            <input type="radio" name="question5" value="Four players">Four players
+                            <input type="radio" name="question5" value="Seven players">Seven players
+                            <input type="radio" name="question5" value="Six players">Six players<br><br>
+
+                            <button type="button" id="button" value="finish" class="btn btn-primary" onclick="check();" >SubmiT</button>
+
+                        </form> 
+                    </div>
+                <div class="col-lg-2"></div>
+               
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="aftersubmit" class="col-lg-12 text-center">
+                <br>
+                    <p id="correctans"></p>
+                </div>
+
+            </div>
+        </div>
+    
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>
